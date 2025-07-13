@@ -113,7 +113,7 @@
 <body>
     <div class="container">
         <div class="jumbotron" style="padding-bottom: 20px !important;">
-                       <img src="logo1.png" align="right" alt="Descripción de la imagen">
+                       <img src="C:\Users\hp\Downloads\StringArtGenerator-master\StringArtGenerator-master\logo1.png" align="right" alt="Descripción de la imagen">
 			<h1>Enhebra StudioArt</h1>
                        <h2 id="status">Porfavor espere: Cargando...</h2><br/>
 
@@ -315,11 +315,10 @@ imgElement.onload = function() {
     ctx.arc(IMG_SIZE/2,IMG_SIZE/2, IMG_SIZE/2, 0, Math.PI*2);
     ctx.closePath();
     ctx.fill();
-
-    // start processing
-    NonBlockingCalculatePins(); 
-	showStep(2);
-NonBlockingCalculatePins();
+showStep(2);
+NonBlockingCalculatePins(); 
+ 
+   
 }
  
 function NonBlockingCalculatePins(){
@@ -767,6 +766,7 @@ document.body.onkeydown = function(e){
 }
 
 function onOpenCvReady() {
+document.getElementById('status').innerHTML = 'Generador Listo.';
     // even when this is called, sometimes it's still not ready, adding slight time buffer
     setTimeout(function(){
         document.getElementById('status').innerHTML = 'Generador Listo.';
@@ -911,4 +911,3 @@ function speakCurrent() {
 </script>
 </body>
 </html>
-
