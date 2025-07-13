@@ -113,7 +113,7 @@
 <body>
     <div class="container">
         <div class="jumbotron" style="padding-bottom: 20px !important;">
-                       <img src="logo1.png" align="right" alt="Descripción de la imagen">
+                       <img src="C:\Users\hp\Downloads\StringArtGenerator-master\StringArtGenerator-master\logo1.png" align="right" alt="Descripción de la imagen">
 			<h1>Enhebra StudioArt</h1>
                        <h2 id="status">Porfavor espere: Cargando...</h2><br/>
 
@@ -147,9 +147,8 @@
 <br></br>
             <label class="btn btn-primary btn-file">
 
-<label for="imageInput" class="btn btn-primary">Seleccionar imagen</label>
-<input type="file" id="imageInput" accept="image/*" style="display: none;">
-
+<b>Haga clic aquí y seleccione una imagen para comenzar</b> 
+<input type="file" id="fileInput" style="display: none;">
             </label>
         </div>
         
@@ -766,7 +765,6 @@ document.body.onkeydown = function(e){
 }
 
 function onOpenCvReady() {
-	alert("¡Listo! El generador está preparado.");
     // even when this is called, sometimes it's still not ready, adding slight time buffer
     setTimeout(function(){
         document.getElementById('status').innerHTML = 'Generador Listo.';
@@ -801,7 +799,7 @@ function downloadPins() {
     URL.revokeObjectURL(url);
 }
 </script>
-<script async src="opencv.js" onload="onOpenCvReady()"></script>
+<script async src="opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/gh/nicolaspanel/numjs@0.15.1/dist/numjs.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -911,3 +909,4 @@ function speakCurrent() {
 </script>
 </body>
 </html>
+
