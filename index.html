@@ -317,7 +317,9 @@ imgElement.onload = function() {
     ctx.fill();
 
     // start processing
-    NonBlockingCalculatePins();    
+    NonBlockingCalculatePins(); 
+	showStep(2);
+NonBlockingCalculatePins();
 }
  
 function NonBlockingCalculatePins(){
